@@ -1,0 +1,116 @@
+#Serie-1
+n = int(input())
+i = 1
+while(i <= n):
+    print(i*i, end=" ")
+    i += 1
+    
+    
+#series-2
+n=int(input())
+i=1
+pr=6
+diff=5
+while i<=n:
+    print(pr,end=" ")
+    pr = pr + diff
+    diff = diff + 5
+    i+=1
+    
+    
+#Series-3
+n =int(input())
+term_1 = 3 
+c_ratio= 3 
+i=1 
+while i: 
+  term_n = term_1*c_ratio**(i-1) 
+  print(term_n, end=' ') 
+  i=i+1     
+  if i>n: 
+    break 
+    
+    
+#Series-4
+a=int(input())
+s=0.5
+print(s,end=' ')
+for i in range(a-1):
+    b=3**i
+    s=s+b
+    print(s,end=' ')
+    
+    
+#Series-5
+a=int(input())
+s=11
+for i in range(a):
+    print(s*s,end=' ')
+    s=s+4#python
+    
+    
+#Series-6
+a=int(input())
+print("0 2",end=" ")
+s=6
+b=2
+for i in range(a):
+    flag=0
+    if i%2 == 1:
+        flag=1
+    b=b+s
+    print(b,end=' ')
+    if flag==1:
+        s=s+4
+        
+        
+#Series-7
+a=int(input())
+s=1
+print(s,end=" ")
+k=0
+b=1
+for i in range(a):#1 2 3 4
+    flag = 0
+    s = s + b#2 3 6 9
+    print("%.1f"%s,end=" ")
+    if i%2 == 1:#0 1 0 1
+        flag = 1
+        k=k+1#0 1 1 2
+    if flag==1:
+        b=3**k#python#python
+        
+        
+#Series-8
+a=int(input())
+s=4
+print(s,end=" ")
+for i in range(1,a):
+    b=i**2
+    s=s+b
+    print(s,end=" ")
+    
+    
+#Series-9
+a=int(input())
+s=2
+print(s,end=" ")
+for i in range(a):
+    s=(s**2)-1
+    print(s,end=" ")
+    
+    
+#Series-10
+a=int(input())
+s=95
+print("%.1f"%s,end=" ")
+b=20.5
+for i in range(a-1):
+    s=s+b
+    b=b+2
+    print(s,end=" ")#python
+    
+    
+    
+
+
