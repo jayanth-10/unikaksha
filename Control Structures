@@ -1,0 +1,180 @@
+#Amoeba Multiplication
+a=int(input())
+s=0
+b=0
+c=1
+print("Enter the number of months:")
+if a==1:
+    print("The amoeba size is 0")
+elif a==2:
+    print("The amoeba size is 1")
+else:
+    for i in range(a-2):
+        s=b+c
+        b=c
+        c=s
+    print("The amoeba size is %d"%s)
+
+
+#Factorial
+a=int(input())
+s=1
+flag=0
+for i in range(1,a+1):
+    s=s*i
+    if a==s:
+        flag=1
+        break
+if flag==1:
+    print("yes")
+else:
+    print("no")
+    
+    
+#Sum of Digits
+a=input()
+b=len(a)
+a=int(a)
+s=0
+for i in range(b):
+    s=s+a%10
+    a=a//10
+print(s)
+
+
+#Friendly Pair
+a=int(input())
+b=int(input())
+c=0
+d=0
+for i in range (1,a+1):
+    if (a%i)==0:
+        d=d+i
+d=d/b
+if d==c:
+    print("Friendly Pair")
+else:
+    print("Not Friendly Pair")
+    
+    
+#Harshard Number
+a=input()
+b=len(a)
+a=int(a)
+c=a
+s=0
+for i in range(b):
+    s=s+a%10
+    a=a//10
+if(c%s)==0:
+    print("Harshad Number")
+else:
+    print("Not Harshad Number")
+    
+    
+#LCM of two numbers
+a=int(input())
+b=int(input())
+c=a*b
+for i in range(1,c+1):
+    if ((i%a)==0) and ((i%b)==0):
+        break
+print("LCM of %d and %d is %d"%(a,b,i))
+
+
+#Palindrome of a number
+a=int(input())
+n=0
+s=a
+b=0
+while a!=0:
+    n=a%10
+    b=b*10+n
+    a=a//10
+if b==s:
+    print("palindrome")
+else:
+    print("not a palindrome")
+    
+    
+#Perfect Number
+a=int(input())
+s=0
+for i in range(1,a+1):
+    if a%i == 0:
+        s=s+i
+if s== a:
+    print("perfect number")
+else:
+    print("not a perfect number")
+    
+    
+#Prime Number
+a=int(input())
+flag=0
+for i in range(1,a):
+    if a%i == 0:
+        flag=flag+1
+if flag == 1:
+    print("prime number")
+else:
+    print("not a prime")#python
+
+
+#Prime Numbers in a Range
+a=int(input())
+b=int(input())
+for i in range(a,b+1):
+    flag=0
+    for k in range(1,i+1):
+        if i%k == 0:
+            flag = flag+1
+    if flag == 2:
+        print(i)
+#python
+
+
+#Reverse a Number
+a=int(input())
+s=0
+while a!=0:
+    b=a%10
+    s=s*10+b
+    a=a//10
+print(s)#python
+
+
+#Strong Number
+a=int(input())
+s=1
+c=0
+t=a
+while a!=0:
+    b=a%10
+    for i in range(1,b+1):
+        s=s*i
+    c=c+s
+    s=1
+    a=a//10
+if c == t:
+    print("strong number")
+else:
+    print("not a strong number")#python
+    
+    
+# Sum of natural Numbers
+n=int(input("Enter a number: "))
+sum1 = 0
+while(n > 0):
+    sum1=sum1+n
+    n=n-1
+print("The sum of first n natural numbers is",sum1)
+
+
+#Sum of Numbers in a range
+a=int(input())
+b=int(input())
+sum=0
+for i in range(a,b+1,1):
+    sum=sum+i
+print(sum)#python
