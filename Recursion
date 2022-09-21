@@ -1,0 +1,66 @@
+#Binary equivalent of a number using recursion
+def binary(n):
+    if n > 1:
+        binary(n//2)
+    print(n % 2,end = '')
+dec = int(input())
+binary(dec)
+
+
+#Fibonacci Series
+n=int(input())
+a=-1
+b=1
+for i in range(1,n+1):
+ c=a+b
+ print(c,end=' ')
+ a=b
+ b=c
+
+#python
+
+
+#Odd or Even
+a=int(input())
+if(a%2==0):
+    {
+print("even!")
+}
+else:
+    {
+print("odd!")
+}#python
+
+
+#Factorial
+a=int(input())
+fact=1
+for i in range(1,a+1):
+    fact=fact*i
+print(fact)#python
+
+
+#LCM of two numbers
+a=int(input())
+b=int(input())
+if(a>b):
+    min1=a
+else:
+    min1=b
+while(1):
+    if(min1%a==0 and min1%b==0):
+        print(" ",min1)
+        break
+    min1=min1+1
+
+
+#Decimal to Binary
+decimal = int(input())
+binary = 0
+d = 0
+temp = decimal  
+while(temp > 0):
+    binary = ((temp%2)*(10**d)) + binary
+    temp = int(temp/2)
+    d += 1       
+print(binary)
