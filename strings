@@ -1,0 +1,46 @@
+#Upper Case and Lower Case
+str1 = input()
+upper = 0
+
+for i in range(len(str1)):
+    if str1[i].isupper():
+        upper += 1
+lower = len(str1) - upper
+print(upper)
+print(lower)#python
+
+
+#Count the word and Character
+s=input()
+char=0
+word=1
+for i in s:
+      char=char+1
+      if(i==' '):
+            word=word+1
+print()
+print(word)
+print()
+print(char)#python
+
+
+#Number of Digits and Letters in a String
+s = input()
+d=l=0
+for c in s:
+    if c.isdigit():
+        d=d+1
+    elif c.isalpha():
+        l=l+1
+    else:
+        pass
+print("Characters =", l)
+print("Digits", d)
+
+
+#Characters in Ascending order 
+s =input()
+result = ''.join(sorted(s))
+print(result)#python
+
+
